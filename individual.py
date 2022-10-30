@@ -6,8 +6,8 @@ def all_perest(arr):
         return [arr]
     else:
         a = arr[0]
-        p = all_perest(arr[1:])  # все перестановки хвоста
-        r = []  # вставляем a в каждую возможную позицию каждой
+        p = all_perest(arr[1:])
+        r = []
         for pp in p:
             for i in range(len(pp)):
                 tmp = pp[0:i] + [a] + pp[i:]
